@@ -1,0 +1,13 @@
+<div class="login-container" >  	
+    <div class="login">
+		<form>
+			<label>Вход</label>
+			<input type="text" name="txt" placeholder="Номер телефона" required="" [(ngModel)]="phoneNumber">
+			<input type="password" name="pswd" placeholder="Пароль" required="" [(ngModel)]="password">
+			<button (click)="onLogin()">Войти</button>
+		</form>
+		<div class="registration-link">
+			Еще нет аккаунта? <a href="/register">Зарегистрироваться</a>
+		</div>
+	</div>
+</div>

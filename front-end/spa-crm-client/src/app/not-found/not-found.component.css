@@ -1,0 +1,20 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .not-found-title {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .not-found-message {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #888;
+  }
+  

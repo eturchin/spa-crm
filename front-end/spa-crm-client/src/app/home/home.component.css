@@ -1,0 +1,45 @@
+.hero-section {
+    background-image: url("https://img.goodfon.ru/original/3000x2000/f/a5/svechi-spa-kamni-tsvety-orkhidei.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+}
+
+.services-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 2%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.service h2 {
+    margin-top: 20px;
+}

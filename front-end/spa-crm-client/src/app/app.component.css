@@ -1,0 +1,18 @@
+div{
+	margin: 0px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: #F1F5F9;
+}
+
+head {
+    margin: 0px;
+}
+
+.content {
+    margin-top: 70px; 
+}

@@ -1,0 +1,75 @@
+.booking-steps form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.booking-step select,
+.booking-steps form select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-steps form div {
+  margin-bottom: 20px;
+}
+
+.booking-steps form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.booking-steps form input[type="date"],
+.booking-steps form input[type="time"] {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-steps form button {
+  padding: 10px 20px;
+  background-color: #573b8a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-steps form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.step-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.step-buttons button {
+  padding: 10px 20px;
+  background-color: #573b8a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.step-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+select {
+  width: 100%; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

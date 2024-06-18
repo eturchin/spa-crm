@@ -1,0 +1,16 @@
+<div class="appointments-container">
+  <h2>Мои записи</h2>
+  <div *ngIf="appointmentData.length > 0; else noAppointments">
+    <ul class="appointments-list">
+      <li *ngFor="let appointment of appointmentData" class="appointment-item">
+        <p><strong>Услуга:</strong> {{ appointment.service.title }}</p>
+        <p><strong>Специалист:</strong> {{ appointment.specialist.lastName }} {{ appointment.specialist.firstName }}</p>
+        <p><strong>Дата:</strong> {{ appointment.formattedDate }}</p>
+        <p><strong>Время:</strong> {{ appointment.formattedTime }}</p>
+      </li>
+    </ul>
+  </div>
+  <ng-template #noAppointments>
+    <p class="no-appointments">У вас пока нет назначенных записей.</p>
+  </ng-template>
+</div>

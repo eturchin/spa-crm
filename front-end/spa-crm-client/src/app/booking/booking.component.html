@@ -1,0 +1,37 @@
+<div class="booking-step" *ngIf="step === 1">
+  <h2>Выберите услугу</h2>
+  <select #selectServiceElement (change)="selectedServiceId = selectServiceElement.value">
+      <option disabled selected>Выберите услугу</option>
+      <option *ngFor="let service of services" [value]="service.id">{{ service.title }}</option>
+  </select>
+</div>
+
+<div class="booking-step" *ngIf="step === 2 && selectedServiceId">
+  <h2>Выберите специалиста</h2>
+  <select #selectSpecialistElement (change)="selectedSpecialistId = selectSpecialistElement.value">
+      <option disabled selected>Выберите специалиста</option>
+      <option *ngFor="let specialist of specialists" [value]="specialist.id">{{ specialist.lastName }} {{ specialist.firstName }}</option>
+  </select>
+</div>
+
+<div class="booking-steps" *ngIf="step === 3 && selectedSpecialistId">
+  <h2>Форма бронирования</h2>
+  <form>
+    <div>
+      <label for="bookingDate">Дата бронирования:</label>
+      <input type="date" id="bookingDate" [(ngModel)]="bookingDate" [min]="minBookingDate">
+    </div>
+    <div>
+      <label for="bookingTime">Время бронирования:</label>
+      <input type="time" id="bookingTime" [(ngModel)]="bookingTime" [min]="minBookingTime" [max]="maxBookingTime">
+    </div>
+    <button (click)="submitBooking()">Забронировать</button>
+  </form>
+</div>
+
+  
+  <div class="step-buttons">
+    <button (click)="prevStep()" [disabled]="step === 1">Назад</button>
+    <button (click)="nextStep()" [disabled]="step === 3">Следующий шаг</button>
+  </div>
+  
